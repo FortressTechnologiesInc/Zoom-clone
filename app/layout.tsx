@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import { ClerkProvider } from "@clerk/nextjs";
+import { ClerkProvider, GoogleOneTap } from "@clerk/nextjs";
 import { Toaster } from "@/components/ui/toaster"
 
 import '@stream-io/video-react-sdk/dist/css/styles.css';
@@ -37,7 +37,7 @@ export default function RootLayout({
           colorInputText: "#fff",
         }
       }}>
-        {/* <ClerkProvider> */}
+        <GoogleOneTap />
         <body className={`{inter.className} bg-dark-2`} >
           {children}
           <Toaster />

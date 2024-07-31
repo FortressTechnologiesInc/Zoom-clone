@@ -6,7 +6,7 @@ import { useGetCallById } from '@/hooks/useGetCallById';
 import { useUser } from '@clerk/nextjs';
 import { useStreamVideoClient } from '@stream-io/video-react-sdk';
 import { useRouter } from 'next/navigation';
-import React from 'react'
+import React, { use } from 'react'
 
 const Table = ({ title, description }: { title: string; description: string }) => (
     <div className='flex flex-col items-start gap-2 xl:flex-row'>
@@ -24,7 +24,7 @@ const PersonalRoom = () => {
     const client = useStreamVideoClient()
     const router = useRouter()
     const meetingLink = `${process.env.NEXT_PUBLIC_BASE_URL}/meeting/${meetingId}?personal=true`
-
+    console.log(user?.firstName, user?.lastName)
     const startRoom = async () => {
         if (!client || !user) return
 
@@ -44,9 +44,9 @@ const PersonalRoom = () => {
 
     return (
         <section className='flex size-full flex-col gap-10 text-white' >
-            <h1 className='text-3xl font-bold'>Personal room</h1>
+            <h1 className='text-3xl font-bold'>Personal Room</h1>
             <div className='flex w-full flex-col gap-8 xl:max-w-[900px]'>
-                <Table title='Topic' description={`${user?.username}'s meeting room`} />
+                <Table title='Topic' description={`${user?.firstName} ${user?.lastName}'s meeting room`} />
                 <Table title='Meeting ID' description={meetingId!} />
                 <Table title='Invite Link' description={meetingLink} />
             </div>
