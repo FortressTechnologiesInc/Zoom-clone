@@ -95,5 +95,5 @@ Follow these steps to set up the project locally.
     npm start
 
 6. Open your browser and go to:
-
+   ```bash
     [text](http://localhost:3000)
