@@ -7,7 +7,7 @@ A full-stack video conferencing application inspired by Zoom, built using the ME
    [https://inventorybillingapp-mern.netlify.app](https://zoom-clone-inky-rho.vercel.app/)
 
 # Usage
-    ```bash
+
     User Registration and Login:
         Create an account and log in securely.
     Create or Join Meetings:
