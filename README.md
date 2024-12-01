@@ -1,37 +1,99 @@
-# 👋 Hello, I'm Mohan!  
+# Zoom Clone (MERN)
 
-## About Me  
-I’m a passionate **MERN Stack Developer** with experience in building dynamic and scalable web applications. My projects demonstrate my expertise in **MongoDB**, **Express.js**, **React.js**, and **Node.js**, along with additional skills in front-end and back-end development, database management, and API integration.
+A full-stack video conferencing application inspired by Zoom, built using the MERN stack (MongoDB, Express.js, React.js, Node.js). This project enables real-time communication through video, audio, and chat, providing a seamless virtual meeting experience.
 
-## Projects
+## Live Demo
 
-### 🔥 [Netflix Clone MERN](https://github.com/mohan7401647399/Netflix_clone_MERN)  
-A feature-rich Netflix-inspired application built with the MERN stack.  
-- **Features**: User authentication, movie catalog browsing, dynamic filtering, and responsive design.  
-- **Tech Stack**: React, Node.js, Express, MongoDB, JWT, Axios.  
+   [https://inventorybillingapp-mern.netlify.app](https://zoom-clone-inky-rho.vercel.app/)
 
-### 📦 [MERN Inventory App](https://github.com/mohan7401647399/MERN-Inventory-app)  
-A robust inventory management application for businesses.  
-- **Features**: Secure login, CRUD operations, search, filter, and real-time analytics.  
-- **Tech Stack**: MongoDB, Express.js, React.js, Node.js.  
+# Usage
+    ```bash
+    User Registration and Login:
+        Create an account and log in securely.
+    Create or Join Meetings:
+        Generate a meeting room ID to start a new session or join an existing one.
+    Video and Audio:
+        Communicate with participants in real time.
+    Chat:
+        Send text messages during meetings.
+    Screen Sharing:
+        Share your screen for presentations or demonstrations.
 
-### 🎥 [React Movie Database App](#)  
-(*Include if the project is public or deployed*)  
-An interactive movie database application utilizing the OMDB API.  
-- **Features**: Search movies, view details, manage favorites, and pagination.  
-- **Tech Stack**: React, OMDB API, Axios, React Router.  
+## Features
 
-## Skills
-- **Frontend**: React.js, Redux, JavaScript (ES6+), HTML5, CSS3  
-- **Backend**: Node.js, Express.js  
-- **Database**: MongoDB, Mongoose  
-- **Other Tools**: Git, GitHub, Postman, Visual Studio Code  
+- **Video and Audio Conferencing**: Real-time communication between multiple participants.
+- **Chat Functionality**: Send and receive messages during meetings.
+- **User Authentication**: Secure login and registration using JWT and bcrypt.
+- **Meeting Rooms**: Create or join virtual meeting rooms with unique IDs.
+- **Screen Sharing**: Share your screen during a meeting for presentations.
+- **Responsive Design**: Works seamlessly on both desktop and mobile devices.
 
-## Connect with Me  
-- **GitHub**: [github.com/mohan7401647399](https://github.com/mohan7401647399)  
-- **LinkedIn**: *(Add your LinkedIn profile link here)*  
-- **Email**: *(Your email address here)*  
+## Technologies Used
 
-## GitHub Stats  
-![Your GitHub stats](https://github-readme-stats.vercel.app/api?username=mohan7401647399&show_icons=true&theme=radical)  
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=mohan7401647399&layout=compact&theme=radical) 
+### Frontend
+- **React.js**: Building dynamic and interactive user interfaces.
+- **React Router**: Client-side navigation for seamless user experience.
+- **WebRTC**: Peer-to-peer video and audio communication.
+- **Axios**: Handling API requests.
+- **CSS/SCSS**: For modern and responsive design.
+
+### Backend
+- **Node.js**: Server-side JavaScript runtime.
+- **Express.js**: Backend framework for handling API routes.
+- **Socket.IO**: Real-time communication for video, audio, and chat.
+- **JWT (JSON Web Tokens)**: Secure token-based authentication.
+- **bcrypt**: Encrypting user passwords.
+
+### Database
+- **MongoDB**: NoSQL database for storing user and meeting data.
+- **Mongoose**: MongoDB object data modeling (ODM).
+
+## Installation
+
+Follow these steps to set up the project locally.
+
+### Prerequisites
+- Install [Node.js](https://nodejs.org/)
+- Install [MongoDB](https://www.mongodb.com/try/download/community) locally or use a MongoDB Atlas cluster.
+
+### Steps
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/mohan7401647399/Zoom-clone.git
+
+2. Navigate to the project directory:
+   ```bash
+    cd Zoom-clone
+
+3. Install dependencies:
+   ```bash
+    For the server:
+        cd server
+        npm install
+    
+    For the client:
+        cd client
+        npm install
+
+4. Configure environment variables:
+    Create a .env file in the server directory with the following:
+   ```bash
+        PORT=5000
+        MONGO_URI=your_mongodb_connection_string
+        JWT_SECRET=your_secret_key
+
+5. Run the application:
+    Start the backend:
+   ```bash
+    cd server
+    npm run dev
+
+    Start the frontend:
+   ```bash
+    cd client
+    npm start
+
+6. Open your browser and go to:
+   ```bash
+    [text](http://localhost:3000)
