@@ -77,15 +77,15 @@ Follow these steps to set up the project locally.
         npm install
 
 4. Configure environment variables:
-    Create a .env file in the server directory with the following:
    ```bash
+    Create a .env file in the server directory with the following:
         PORT=5000
         MONGO_URI=your_mongodb_connection_string
         JWT_SECRET=your_secret_key
 
-5. Run the application:
+6. Run the application:
+```bash
     Start the backend:
-   ```bash
     cd server
     npm run dev
 
@@ -93,6 +93,6 @@ Follow these steps to set up the project locally.
     cd client
     npm start
 
-6. Open your browser and go to:
+7. Open your browser and go to:
    ```bash
     [text](http://localhost:3000)
