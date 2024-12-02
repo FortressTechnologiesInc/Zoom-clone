@@ -84,7 +84,7 @@ Follow these steps to set up the project locally.
         JWT_SECRET=your_secret_key
 
 6. Run the application:
-```bash
+   ```bash
     Start the backend:
        cd server
        npm run dev
@@ -94,5 +94,5 @@ Follow these steps to set up the project locally.
        npm start
 
 7. Open your browser and go to:
-```bash
+   ```bash
     [text](http://localhost:3000)
