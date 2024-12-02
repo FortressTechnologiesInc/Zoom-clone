@@ -90,7 +90,6 @@ Follow these steps to set up the project locally.
     npm run dev
 
     Start the frontend:
-   ```bash
     cd client
     npm start
 
