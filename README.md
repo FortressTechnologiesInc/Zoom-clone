@@ -86,12 +86,12 @@ Follow these steps to set up the project locally.
 6. Run the application:
 ```bash
     Start the backend:
-    cd server
-    npm run dev
+       cd server
+       npm run dev
 
     Start the frontend:
-    cd client
-    npm start
+       cd client
+       npm start
 
 7. Open your browser and go to:
 ```bash
