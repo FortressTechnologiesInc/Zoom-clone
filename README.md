@@ -94,5 +94,5 @@ Follow these steps to set up the project locally.
     npm start
 
 7. Open your browser and go to:
-   ```bash
+```bash
     [text](http://localhost:3000)
