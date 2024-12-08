@@ -4,7 +4,7 @@ A full-stack video conferencing application inspired by Zoom, built using the ME
 
 ## Live Demo
 
-   [[https://inventorybillingapp-mern.netlify.app](https://zoom-clone-inky-rho.vercel.app/)](https://zoom-clone-inky-rho.vercel.app/)
+   https://zoom-clone-inky-rho.vercel.app/
 
 # Usage
 
