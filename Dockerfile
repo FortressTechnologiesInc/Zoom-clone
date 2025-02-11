@@ -42,8 +42,8 @@ COPY --from=client-build /app/client /app/client
 
 # Set environment variables (These could also be done via a .env file or Kubernetes secrets, depending on your setup)
 ENV PORT=5000
-ENV MONGO_URI=your_mongodb_connection_string
-ENV JWT_SECRET=your_secret_key
+ENV MONGO_URI=mongodb+srv://denifer:admin123@mongodb-demo.p1jch.mongodb.net/?retryWrites=true&w=majority&appName=mongodb-demo
+ENV JWT_SECRET=
 
 # Expose port for the server
 EXPOSE 5000
